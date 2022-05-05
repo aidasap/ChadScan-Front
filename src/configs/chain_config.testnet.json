@@ -1,9 +1,9 @@
 {
   "title": "Idep Block Explorer",
-  "network": "theta-testnet-001",
-  "icon": "/images/icon.svg",
+  "network": "SanfordNetworkV2",
+  "icon": "/images/idep.png",
   "logo": {
-    "default": "/images/logo.svg"
+    "default": "/images/idep.png"
   },
   "prefix": {
     "consensus": "cosmosvalcons",

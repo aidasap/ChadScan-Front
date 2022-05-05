@@ -8,16 +8,16 @@ generates:
       - './src/**/*.graphql'
       - './src/**/*_actions.ts'
       - './src/**/*_documents.ts'
-      - '!./src/**/desmos_profile.graphql'
-    schema: https://gql.desmos.forbole.com/v1/graphql
+#      - '!./src/**/desmos_profile.graphql'
+    schema: http://159.65.196.201:8080/v1/graphql
     plugins:
       - "typescript"
       - "typescript-operations"
       - "typescript-react-apollo" # To generate custom hooks per query
-  ./src/graphql/desmos_profile.ts:
-    schema: https://gql.mainnet.desmos.network/v1/graphql
-    documents:
-      - 'src/graphql/desmos_profile_graphql.ts'
-    plugins:
-      - "typescript"
-      - "typescript-operations"
+#  ./src/graphql/desmos_profile.ts:
+#    schema: http://159.65.196.201:8080/v1/graphql
+#    documents:
+#      - 'src/graphql/desmos_profile_graphql.ts'
+#    plugins:
+#      - "typescript"
+#      - "typescript-operations"

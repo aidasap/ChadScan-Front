@@ -30,8 +30,10 @@ export const useBigDipperNetworksRecoil = () => {
     const getNetworkList = async () => {
       let data = [];
       try {
-        const results = await axios.get(NETWORK_LIST_API);
-        data = results?.data ?? [];
+        // const results = await axios.get(NETWORK_LIST_API);
+        // data = results?.data ?? [];
+        // TODO: remove this
+        data = [];
       } catch (error) {
         console.error(error);
       }
