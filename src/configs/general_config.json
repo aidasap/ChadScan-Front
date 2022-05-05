@@ -1,10 +1,10 @@
 {
   "maintainer": {
-    "name": "Forbole",
-    "url": "https://forbole.com"
+    "name": "IDEP",
+    "url": "https://github.com/IDEP-network"
   },
   "github": {
-    "reportIssue": "https://github.com/forbole/big-dipper-2.0-cosmos/issues"
+    "reportIssue": "https://github.com/IDEP-network/big-dipper-2.0-cosmos/issues"
   },
   "version": "base-v2.1.0"
 }

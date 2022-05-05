@@ -1,5 +1,5 @@
 {
-  "title": "Cosmos Block Explorer",
+  "title": "Idep Block Explorer",
   "network": "theta-testnet-001",
   "icon": "/images/icon.svg",
   "logo": {
@@ -8,18 +8,18 @@
   "prefix": {
     "consensus": "cosmosvalcons",
     "validator": "cosmosvaloper",
-    "account": "cosmos"
+    "account": "idep"
   },
   "genesis": {
-    "time": "2021-07-13T08:00:00",
+    "time": "2022-02-07T21:28:04.875707074Z",
     "height": 1
   },
-  "primaryTokenUnit": "uatom",
-  "votingPowerTokenUnit": "uatom",
+  "primaryTokenUnit": "idep",
+  "votingPowerTokenUnit": "idep",
   "tokenUnits": {
-    "uatom": {
-      "display": "atom",
-      "exponent": 6
+    "idep": {
+      "display": "idep",
+      "exponent": 8
     }
   },
   "extra": {
