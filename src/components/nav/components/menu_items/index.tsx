@@ -33,6 +33,7 @@ const MenuItems = () => {
           <Link href={x.url} key={x.key} passHref>
             <ListItem
               button
+              disableRipple
               className={classnames(classes.root, {
                 active: isActive,
               })}
