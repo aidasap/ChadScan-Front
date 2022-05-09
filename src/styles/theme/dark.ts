@@ -44,10 +44,10 @@ export const darkThemeOverride = {
         highlight: '#6AA6FF',
       },
       primaryData: {
-        one: '#AE73F8',
-        two: '#6B9EFF',
-        three: '#5ACF78',
-        four: '#E3AB55',
+        one: '#f868ec',
+        two: '#f98c2a',
+        three: '#C5C6DD',
+        four: '#00d1ea',
       },
       tokenomics: {
         one: '#5E94FF',
