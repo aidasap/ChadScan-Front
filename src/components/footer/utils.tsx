@@ -11,7 +11,7 @@ export const footerLinks = [
     key: 'company',
     links: [
       {
-        key: 'forbole',
+        key: 'IDEP',
         url: FORBOLE_URL,
       },
       {
@@ -25,27 +25,6 @@ export const footerLinks = [
       {
         key: 'blog',
         url: `${FORBOLE_URL}/blog`,
-      },
-    ],
-  },
-  {
-    key: 'bigDipper',
-    links: [
-      {
-        key: 'about',
-        url: `${BIG_DIPPER_URL}/#about`,
-      },
-      {
-        key: 'faq',
-        url: `${BIG_DIPPER_URL}/faq`,
-      },
-      {
-        key: 'termsAndConditions',
-        url: `${BIG_DIPPER_URL}/terms-and-conditions`,
-      },
-      {
-        key: 'privacyPolicy',
-        url: `${BIG_DIPPER_URL}/privacy-policy`,
       },
     ],
   },
