@@ -8,7 +8,7 @@ generates:
       - './src/**/*.graphql'
       - './src/**/*_actions.ts'
       - './src/**/*_documents.ts'
-#      - '!./src/**/desmos_profile.graphql'
+      - '!./src/**/desmos_profile.graphql'
     schema: http://159.65.196.201:8080/v1/graphql
     plugins:
       - "typescript"

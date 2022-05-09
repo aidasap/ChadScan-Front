@@ -1,8 +1,7 @@
 import React from 'react';
 import * as R from 'ramda';
 import { useRecoilValue } from 'recoil';
-import BigDipperLogoWhite from '@assets/big-dipper-white.svg';
-import BigDipperLogoRed from '@assets/big-dipper-red.svg';
+import Logo from '@assets/chadscan-logo.svg';
 import { LinearProgress } from '@material-ui/core';
 import { chainConfig } from '@configs';
 import { readTheme } from '@recoil/settings';
@@ -19,11 +18,7 @@ const InitialLoad = () => {
       <div>
         <img src={logoUrl} className={classes.logo} alt="logo" />
         <LinearProgress className={classes.divider} />
-        {theme === 'light' ? (
-          <BigDipperLogoRed />
-        ) : (
-          <BigDipperLogoWhite />
-        )}
+        <Logo />
       </div>
     </div>
   );

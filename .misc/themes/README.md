@@ -1,6 +1,6 @@
 <br><br>
 <div align="center">
-  <img src="./big-dipper-red.svg" width=300>
+  <img src="./chadscan-logo.svg" width=300>
 </div>
 <br>
 

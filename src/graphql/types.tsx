@@ -17000,6 +17000,9 @@ export type BlocksListenerSubscription = { blocks: Array<(
       & { validatorInfo?: Maybe<(
         { __typename?: 'validator_info' }
         & { operatorAddress: Validator_Info['operator_address'] }
+      )>, validatorDescriptions: Array<(
+        { __typename?: 'validator_description' }
+        & Pick<Validator_Description, 'moniker' | 'identity' | 'avatar_url' | 'website'>
       )> }
     )> }
   )> };
@@ -17022,7 +17025,7 @@ export type BlocksQuery = { blocks: Array<(
         & { operatorAddress: Validator_Info['operator_address'] }
       )>, validatorDescriptions: Array<(
         { __typename?: 'validator_description' }
-        & Pick<Validator_Description, 'moniker' | 'identity'>
+        & Pick<Validator_Description, 'moniker' | 'identity' | 'avatar_url' | 'website'>
       )> }
     )> }
   )> };
@@ -18030,6 +18033,15 @@ export const BlocksListenerDocument = gql`
       validatorInfo: validator_info {
         operatorAddress: operator_address
       }
+      validatorDescriptions: validator_descriptions(
+        limit: 1
+        order_by: {height: desc}
+      ) {
+        moniker
+        identity
+        avatar_url
+        website
+      }
     }
   }
 }
@@ -18076,6 +18088,8 @@ export const BlocksDocument = gql`
       ) {
         moniker
         identity
+        avatar_url
+        website
       }
     }
   }
