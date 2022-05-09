@@ -9,16 +9,12 @@ export const footerLinks = [
         url: IDEP_URL,
       },
       {
-        key: 'stakeNow',
-        url: `${IDEP_URL}/stake-now`,
+        key: 'docs',
+        url: 'https://docs.idep.network/',
       },
       {
         key: 'contact',
         url: `${IDEP_URL}/contact`,
-      },
-      {
-        key: 'blog',
-        url: `${IDEP_URL}/blog`,
       },
     ],
   },
