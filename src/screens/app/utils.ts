@@ -38,11 +38,6 @@ export const ADDITIONAL_LINK_TAGS_SEO = [
     href: '/icons/site.webmanifest',
   },
   {
-    rel: 'mask-icon',
-    href: '/icons/safari-pinned-tab.svg',
-    color: '#5bbad5',
-  },
-  {
     rel: 'shortcut icon',
     href: '/icons/favicon.ico',
   },
