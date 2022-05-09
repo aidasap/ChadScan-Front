@@ -1,9 +1,8 @@
 import React from 'react';
 import {
-  TelegramIcon,
-  LinkedinIcon,
   TwitterIcon,
   GithubIcon,
+  DiscordIcon,
 } from '@icons';
 
 export const socialMediaLinks:{
@@ -12,23 +11,18 @@ export const socialMediaLinks:{
   url: string;
 }[] = [
   {
-    component: <TelegramIcon />,
-    className: 'telegram',
-    url: 'https://t.me/forbole',
-  },
-  {
-    component: <LinkedinIcon />,
-    className: 'linkedin',
-    url: 'https://www.linkedin.com/company/forbole',
-  },
-  {
     component: <TwitterIcon />,
     className: 'twitter',
-    url: 'https://twitter.com/bigdipperlive',
+    url: 'https://twitter.com/idepnetwork',
   },
   {
     component: <GithubIcon />,
     className: 'github',
-    url: 'https://github.com/forbole',
+    url: 'https://github.com/IDEP-network',
+  },
+  {
+    component: <DiscordIcon />,
+    className: 'discord',
+    url: 'https://discord.com/invite/Jrarctk4hG',
   },
 ];
