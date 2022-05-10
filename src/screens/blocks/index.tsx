@@ -9,9 +9,6 @@ import {
   NoData,
 } from '@components';
 import { useScreenSize } from '@hooks';
-import {
-  useProfilesRecoil,
-} from '@recoil/profiles';
 import { useStyles } from './styles';
 import { useBlocks } from './hooks';
 
@@ -28,14 +25,6 @@ const Blocks = () => {
     itemCount,
     isItemLoaded,
   } = useBlocks();
-
-  const proposerProfiles = useProfilesRecoil(state.items.map((x) => x.proposer));
-  const mergedDataWithProfiles = state.items.map((x, i) => {
-    return ({
-      ...x,
-      proposer: proposerProfiles[i],
-    });
-  });
 
   return (
     <>
@@ -60,14 +49,14 @@ const Blocks = () => {
               <>
                 {isDesktop ? (
                   <Desktop
-                    items={mergedDataWithProfiles}
+                    items={state.items}
                     itemCount={itemCount}
                     loadMoreItems={loadMoreItems}
                     isItemLoaded={isItemLoaded}
                   />
                 ) : (
                   <Mobile
-                    items={mergedDataWithProfiles}
+                    items={state.items}
                     itemCount={itemCount}
                     loadMoreItems={loadMoreItems}
                     isItemLoaded={isItemLoaded}

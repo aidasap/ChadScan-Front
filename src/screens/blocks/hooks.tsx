@@ -115,12 +115,20 @@ export const useBlocks = () => {
     }
     return formattedData.map((x) => {
       const proposerAddress = R.pathOr('', ['validator', 'validatorInfo', 'operatorAddress'], x);
+      const [{
+        moniker: name,
+        avatar_url: imageUrl,
+      }] = x.validator.validatorDescriptions;
       return ({
         height: x.height,
         txs: x.txs,
         hash: x.hash,
         timestamp: x.timestamp,
-        proposer: proposerAddress,
+        proposer: {
+          address: proposerAddress,
+          imageUrl,
+          name: name || proposerAddress,
+        },
       });
     });
   };

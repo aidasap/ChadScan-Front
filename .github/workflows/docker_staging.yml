@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches:
-      - chains/cosmos
+      - chains/idep
 
 jobs:
   Build-and-Publish:

@@ -2,7 +2,7 @@ export type BlockType = {
   height: number;
   txs: number;
   timestamp: string;
-  proposer: string;
+  proposer: AvatarName;
   hash: string;
 }
 
