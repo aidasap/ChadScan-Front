@@ -6,8 +6,8 @@
     "default": "/images/idep.png"
   },
   "prefix": {
-    "consensus": "cosmosvalcons",
-    "validator": "cosmosvaloper",
+    "consensus": "idepvalcons",
+    "validator": "idepvaloper",
     "account": "idep"
   },
   "genesis": {
@@ -23,6 +23,6 @@
     }
   },
   "extra": {
-    "profile": true
+    "profile": false
   }
 }

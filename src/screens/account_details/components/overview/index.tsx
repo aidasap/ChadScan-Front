@@ -46,7 +46,7 @@ const Overview: React.FC<{
   } = useOverview(t);
 
   const url = `${process.env.NEXT_PUBLIC_URL}/accounts/${address}`;
-  const hashTags = ['bigdipperexplorer', 'bigdipper'];
+  const hashTags = ['chadscan', 'idep'];
   return (
     <>
       <Dialog
