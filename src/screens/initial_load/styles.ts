@@ -28,6 +28,10 @@ export const useStyles = () => {
         divider: {
           margin: theme.spacing(2, 0),
         },
+        chadscan: {
+          display: 'block',
+          margin: theme.spacing(0.5, 'auto'),
+        },
       });
     },
   )();

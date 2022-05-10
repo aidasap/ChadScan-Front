@@ -1,7 +1,6 @@
 import React from 'react';
 import * as R from 'ramda';
 import { useRecoilValue } from 'recoil';
-import Logo from '@assets/chadscan-logo.svg';
 import { LinearProgress } from '@material-ui/core';
 import { chainConfig } from '@configs';
 import { readTheme } from '@recoil/settings';
@@ -18,7 +17,7 @@ const InitialLoad = () => {
       <div>
         <img src={logoUrl} className={classes.logo} alt="logo" />
         <LinearProgress className={classes.divider} />
-        <Logo />
+        <img src="/images/chadscan-logo.svg" alt="Chadscan" className={classes.chadscan} />
       </div>
     </div>
   );

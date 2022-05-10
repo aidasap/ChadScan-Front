@@ -1,7 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
 import { Box } from '@material-ui/core';
-import Logo from '@assets/chadscan-logo.svg';
 import { Networks } from '@src/components/nav/components';
 import { useStyles } from './styles';
 
@@ -23,7 +22,7 @@ const NetworkList: React.FC<{
           height: actionHeight,
         }}
       >
-        <Logo />
+        <img src="/images/chadscan-logo.svg" alt="Chadscan" />
       </div>
       <Networks className={classes.content} />
     </Box>

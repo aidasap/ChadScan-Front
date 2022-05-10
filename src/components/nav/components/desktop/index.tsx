@@ -5,9 +5,6 @@ import {
   AppBar,
   ClickAwayListener,
 } from '@material-ui/core';
-import { useRecoilValue } from 'recoil';
-import { readTheme } from '@recoil/settings/selectors';
-import Logo from '@assets/chadscan-logo.svg';
 import { useStyles } from './styles';
 import { useDesktop } from './hooks';
 import {
@@ -23,7 +20,6 @@ const Desktop: React.FC<{
   className, title,
 }) => {
   const classes = useStyles();
-  const theme = useRecoilValue(readTheme);
   const {
     isMenu,
     toggleMenu,
@@ -65,11 +61,16 @@ const Desktop: React.FC<{
             }),
           }}
         >
-          <Logo
-            className={classes.logo}
+          <div
             onClick={toggleMenu}
             role="button"
-          />
+          >
+            <img
+              src="/images/chadscan-logo.svg"
+              alt="Chadscan"
+              className={classes.logo}
+            />
+          </div>
           <MenuItems />
         </Drawer>
       </div>

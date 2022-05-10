@@ -2,7 +2,6 @@ import React from 'react';
 import classnames from 'classnames';
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
-import FooterLogo from '@assets/chadscan-logo.svg';
 import {
   Divider,
   Typography,
@@ -32,7 +31,7 @@ const Footer: React.FC<{className?: string}> = ({ className }) => {
         {/* logo */}
         {/* ============================= */}
         <div className="footer__logo--container">
-          <FooterLogo className="footer__logo" />
+          <img src="/images/chadscan-logo.svg" alt="Chadscan" className="footer__logo" />
           <p className="footer__slogan">{chainConfig.title}</p>
         </div>
         {/* ============================= */}
