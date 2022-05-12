@@ -37,8 +37,8 @@ export const useBlocks = () => {
         timestamp: x.timestamp,
         proposer: {
           address: proposerAddress,
-          imageUrl: description.avatarUrl || '',
-          name: description.moniker || proposerAddress,
+          imageUrl: description?.avatarUrl || '',
+          name: description?.moniker || proposerAddress,
         },
       });
     });
