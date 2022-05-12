@@ -11,7 +11,7 @@ subscription BlocksListener($limit: Int = 7, $offset: Int = 0) {
       validatorDescriptions: validator_descriptions(limit: 1, order_by: {height: desc}) {
         moniker
         identity
-        avatar_url
+        avatarUrl: avatar_url
         website
       }
     }
@@ -33,7 +33,7 @@ query Blocks($limit: Int = 7, $offset: Int = 0) {
       validatorDescriptions: validator_descriptions(limit: 1, order_by: {height: desc}) {
         moniker
         identity
-        avatar_url
+        avatarUrl: avatar_url
         website
       }
     }

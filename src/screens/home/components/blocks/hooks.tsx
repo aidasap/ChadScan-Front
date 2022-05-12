@@ -29,10 +29,7 @@ export const useBlocks = () => {
   const formatBlocks = (data: BlocksListenerSubscription) => {
     return data.blocks.map((x) => {
       const proposerAddress = R.pathOr('', ['validator', 'validatorInfo', 'operatorAddress'], x);
-      const [{
-        moniker: name,
-        avatar_url: imageUrl,
-      }] = x.validator.validatorDescriptions;
+      const [description] = x.validator.validatorDescriptions;
       return ({
         height: x.height,
         txs: x.txs,
@@ -40,8 +37,8 @@ export const useBlocks = () => {
         timestamp: x.timestamp,
         proposer: {
           address: proposerAddress,
-          imageUrl,
-          name: name || proposerAddress,
+          imageUrl: description.avatarUrl || '',
+          name: description.moniker || proposerAddress,
         },
       });
     });
