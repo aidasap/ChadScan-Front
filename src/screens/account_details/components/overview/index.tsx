@@ -45,7 +45,7 @@ const Overview: React.FC<{
     handleCopyToClipboard,
   } = useOverview(t);
 
-  const url = `${process.env.NEXT_PUBLIC_URL}/accounts/${address}`;
+  const url = `${process.env.NEXT_PUBLIC_VERCEL_URL ? `http://${process.env.NEXT_PUBLIC_VERCEL_URL}:3000` : process.env.NEXT_PUBLIC_URL}/accounts/${address}`;
   const hashTags = ['chadscan', 'idep'];
   return (
     <>
