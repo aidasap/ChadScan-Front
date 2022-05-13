@@ -37,7 +37,7 @@ export const useOnlineVotingPower = () => {
       'aggregate',
       'sum',
       'votingPower',
-    ], data);
+    ], data) / 100;
     const bonded = R.pathOr(0, [
       'stakingPool',
       0,

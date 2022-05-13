@@ -21,12 +21,13 @@ const VotingPower: React.FC<{
   status,
 }) => {
   const { t } = useTranslation('validators');
+  const self = data.self / 100;
   const votingPowerPercent = status === 3 ? numeral((
-    data.self / numeral(data.overall.value).value()) * 100) : numeral(0);
+    self / numeral(data.overall.value).value()) * 100) : numeral(0);
 
   const classes = useStyles(votingPowerPercent.format(0, Math.floor));
 
-  const votingPower = status === 3 ? numeral(data.self).format('0,0') : '0';
+  const votingPower = status === 3 ? numeral(self).format('0,0') : '0';
 
   return (
     <Box className={classnames(className, classes.root)}>
