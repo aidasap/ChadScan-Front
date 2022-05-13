@@ -67,7 +67,7 @@ const Desktop: React.FC<{
           >
             <img
               src="/images/chadscan-logo.svg"
-              alt="Chadscan"
+              alt="Chad Scan"
               className={classes.logo}
             />
           </div>

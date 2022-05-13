@@ -1,8 +1,7 @@
 {
   "en": "English",
   "zht": "中文",
-  "chadscan": "Chadscan",
-  "forbole": "Forbole",
+  "chadscan": "Chad Scan",
   "idep": "IDEP",
   "docs": "Docs",
   "copyright": "<0>License</0>",
@@ -41,7 +40,7 @@
   "nothingToShow": "Nothing to show",
   "notFound": "Not Found",
   "useValidatorAddress": "Please use a validator address instead",
-  "description": "Big Dipper is an open-source block explorer and token management tool serving over 10 proof-of-stake blockchains. It has been forked more than 100 times on GitHub and has served audiences from 140 countries and regions.",
+  "description": "Easiest way to get information on the IDEP Network.",
   "supply": "Supply",
   "blockTimeAgo": "Latest block displayed was {{time}}",
   "settings": "Settings",

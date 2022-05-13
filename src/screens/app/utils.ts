@@ -1,6 +1,6 @@
 export const OPEN_GRAPH_SEO = {
   type: 'website',
-  site_name: 'Big Dipper',
+  site_name: 'Chad Scan',
   images: [
     {
       url: 'https://bigdipper.live/images/big-dipper-social-media.png',
