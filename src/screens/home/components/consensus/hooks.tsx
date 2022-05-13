@@ -24,7 +24,7 @@ export const useConsensus = () => {
     proposer: '',
   });
 
-  const websocketUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `ws://${process.env.NEXT_PUBLIC_VERCEL_URL}:26657/websocket` : (
+  const websocketUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `wss://${process.env.NEXT_PUBLIC_VERCEL_URL}:26657/websocket` : (
     process.env.NEXT_PUBLIC_RPC_WEBSOCKET || process.env.NEXT_PUBLIC_WS_CHAIN_URL);
 
   useEffect(() => {
