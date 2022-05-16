@@ -1,9 +1,9 @@
 {
   "title": "IDEP Block Explorer",
   "network": "SanfordNetworkV2",
-  "icon": "/images/idep.png",
+  "icon": "/images/idep.svg",
   "logo": {
-    "default": "/images/idep.png"
+    "default": "/images/idep.svg"
   },
   "prefix": {
     "consensus": "idepvalcons",
