@@ -31,7 +31,7 @@ function App(props: AppProps) {
         description={t('common:description')}
         openGraph={{
           title: `${t('common:chadscan')} | ${chainConfig.title}`,
-          url: process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}:3000` : process.env.NEXT_PUBLIC_URL,
+          url: process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/` : process.env.NEXT_PUBLIC_URL,
           description: t('common:description'),
           ...OPEN_GRAPH_SEO,
         }}

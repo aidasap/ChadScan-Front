@@ -24,8 +24,7 @@ export const useConsensus = () => {
     proposer: '',
   });
 
-  const websocketUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `wss://${process.env.NEXT_PUBLIC_VERCEL_URL}:26657/websocket` : (
-    process.env.NEXT_PUBLIC_RPC_WEBSOCKET || process.env.NEXT_PUBLIC_WS_CHAIN_URL);
+  const websocketUrl = process.env.NEXT_PUBLIC_RPC_WEBSOCKET;
 
   useEffect(() => {
     const client = new WebSocket(websocketUrl);
@@ -48,6 +47,7 @@ export const useConsensus = () => {
     };
 
     client.onopen = () => {
+      console.log('Consensus [opened socket]');
       client.send(JSON.stringify(stepHeader));
       client.send(JSON.stringify(roundHeader));
     };
@@ -64,7 +64,7 @@ export const useConsensus = () => {
     };
 
     client.onclose = () => {
-      console.log('closing socket');
+      console.log('Consensus [closing socket]');
     };
 
     return () => {
