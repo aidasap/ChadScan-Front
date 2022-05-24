@@ -1,7 +1,7 @@
 {
   "en": "English",
   "zht": "中文",
-  "chadscan": "Chad Scan",
+  "chadscan": "ChadScan",
   "idep": "IDEP",
   "docs": "Docs",
   "copyright": "<0>License</0>",
@@ -40,7 +40,7 @@
   "nothingToShow": "Nothing to show",
   "notFound": "Not Found",
   "useValidatorAddress": "Please use a validator address instead",
-  "description": "Easiest way to get information on the IDEP Network.",
+  "description": "Easiest way to get information on IDEP Network.",
   "supply": "Supply",
   "blockTimeAgo": "Latest block displayed was {{time}}",
   "settings": "Settings",
