@@ -2,7 +2,7 @@ export const ROOT_URL = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.
 
 export const OPEN_GRAPH_SEO = {
   type: 'website',
-  site_name: 'Chad Scan',
+  site_name: 'ChadScan',
   images: [
     {
       url: `${ROOT_URL}/images/cover.png`,
