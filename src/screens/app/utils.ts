@@ -1,9 +1,11 @@
+export const ROOT_URL = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : process.env.NEXT_PUBLIC_URL;
+
 export const OPEN_GRAPH_SEO = {
   type: 'website',
   site_name: 'Chad Scan',
   images: [
     {
-      url: 'https://bigdipper.live/images/big-dipper-social-media.png',
+      url: `${ROOT_URL}/images/cover.png`,
       width: 800,
       height: 600,
       alt: 'Preview Photo',
