@@ -23,7 +23,7 @@ const Navbar = (props:NavbarProps) => {
         <a className={classes.a}>
           <img
             src="/images/chadscan-logo.svg"
-            alt="Chad Scan"
+            alt="ChadScan"
             className={classes.logo}
           />
         </a>
