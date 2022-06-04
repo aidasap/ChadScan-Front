@@ -1,6 +1,6 @@
 {
   "title": "IDEP Block Explorer",
-  "network": "SanfordNetworkV2",
+  "network": "testnet-1",
   "icon": "/images/idep.svg",
   "logo": {
     "default": "/images/idep.svg"
@@ -11,7 +11,7 @@
     "account": "idep"
   },
   "genesis": {
-    "time": "2022-02-07T21:28:04.875707074Z",
+    "time": "2022-06-01T13:06:41.739807821Z",
     "height": 1
   },
   "primaryTokenUnit": "idep",
