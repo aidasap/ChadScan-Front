@@ -1,6 +1,6 @@
 {
   "title": "IDEP Block Explorer",
-  "network": "testnet-1",
+  "network": "MalakuNetwork",
   "icon": "/images/idep.svg",
   "logo": {
     "default": "/images/idep.svg"
@@ -11,14 +11,14 @@
     "account": "idep"
   },
   "genesis": {
-    "time": "2022-06-01T13:06:41.739807821Z",
+    "time": "2022-06-05T07:24:56.003248405Z",
     "height": 1
   },
-  "primaryTokenUnit": "idep",
-  "votingPowerTokenUnit": "idep",
+  "primaryTokenUnit": "uidep",
+  "votingPowerTokenUnit": "uidep",
   "tokenUnits": {
-    "idep": {
-      "display": "idep",
+    "uidep": {
+      "display": "uidep",
       "exponent": 8
     }
   },
