@@ -18,8 +18,8 @@
   "votingPowerTokenUnit": "uidep",
   "tokenUnits": {
     "uidep": {
-      "display": "uidep",
-      "exponent": 8
+      "display": "idep",
+      "exponent": 6
     }
   },
   "extra": {
