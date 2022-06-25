@@ -17,7 +17,7 @@
   "primaryTokenUnit": "idep",
   "votingPowerTokenUnit": "idep",
   "tokenUnits": {
-    "uidep": {
+    "idep": {
       "display": "idep",
       "exponent": 6
     }
