@@ -1,6 +1,6 @@
 {
   "title": "IDEP Block Explorer",
-  "network": "MalakuNetwork",
+  "network": "Antora",
   "icon": "/images/idep.svg",
   "logo": {
     "default": "/images/idep.svg"
@@ -11,11 +11,11 @@
     "account": "idep"
   },
   "genesis": {
-    "time": "2022-06-05T07:24:56.003248405Z",
+    "time": "2022-06-25T17:49:55.271505293Z",
     "height": 1
   },
-  "primaryTokenUnit": "uidep",
-  "votingPowerTokenUnit": "uidep",
+  "primaryTokenUnit": "idep",
+  "votingPowerTokenUnit": "idep",
   "tokenUnits": {
     "uidep": {
       "display": "idep",
