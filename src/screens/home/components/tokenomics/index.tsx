@@ -24,7 +24,6 @@ const Tokenomics:React.FC<{
     classes, theme,
   } = useStyles();
   const { state } = useTokenomics();
-  console.log(state, chainConfig.tokenUnits);
 
   const data = [
     {
